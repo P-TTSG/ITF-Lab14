@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phone Book</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="phone-book-container">
+        <h1>My Phone Book</h1>
+        <div class="avatar-container">
+            <div class="avatar" style="background-image: url('pro.jpg');"></div>
+            <div class="notification">1</div>
+        </div>
+        <div class="username">
+            <a href="https://www.instagram.com/ml_yut/" id="username-link">ธนกฤต ศรีดาวเรือง 67070059</a>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Enter Username" id="username-input">
+            <button onclick="updateUsername()">Set</button>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Enter Image URL" id="image-url-input">
+            <button onclick="updateImage()">Set</button>
+        </div>
+        <h2>Phone Number List</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Name" id="name-input">
+            <input type="tel" placeholder="Phone Number" id="phone-input">
+            <button onclick="addEntry()">Add</button>
+            <button onclick="exportToCSV()">Export</button>
+        </div>
+        <table id="phone-book">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
